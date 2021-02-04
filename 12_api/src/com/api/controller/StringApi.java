@@ -30,7 +30,7 @@ public class StringApi {
 		
 		//3. indexOf() : (앞에서부터) 매개변수와 일치하는 문자의 인덱스 번호 반환
 		result = "안녕하세요";
-		System.out.println(result.indexOf("하"));
+		System.out.println(result.indexOf("하"));//2
 		//매개변수 두 개도 가능함 -> 문자, 시작 인덱스번호
 		result = "aabcde";
 		System.out.println(result.indexOf("a"));//0
@@ -62,13 +62,7 @@ public class StringApi {
 		System.out.println(JoinResult);
 		
 		//8. substring() : 특정 지역(인덱스 범위)의 문자를 잘라내는 기능
-		result = "여러분 오늘 힘냅시다!";
-		System.out.println(result.substring(7));//힘냅시다!
-		System.out.println(result.substring(result.indexOf("힘")));//힘냅시다!
-		System.out.println(result.substring(4, 6));//오늘
-		System.out.println(result.substring(result.indexOf("오"), result.lastIndexOf(" ")));//오늘
-		//=System.out.println(result.substring(result.indexOf("오"), result.IndexOf("늘")+1));
-		System.out.println(result.substring(0, 3).concat(result.substring(7)));//여러분힘냅시다!
+		
 		
 		//9. toUpperCase() / toLowerCase() : 영문자 변환(대문자<->소문자)
 		result = "AAbbCCdd";
@@ -82,7 +76,7 @@ public class StringApi {
 		String result2 = "김     띄어쓰기           ";
 		System.out.println(result2);//김     띄어쓰기           
 		System.out.println(result2.trim());//김     띄어쓰기
-		System.out.println(result.replace(" ", ""));//띄어쓰기//왜 김이 사라지쥬?
+		System.out.println(result2.replace(" ", ""));
 		
 		
 		//11. ValueOf() : static메소드, 다른 자료형을 String으로 형변환 하기
@@ -91,8 +85,8 @@ public class StringApi {
 		String strAge = String.valueOf(age);
 		System.out.println(strAge);//19
 		boolean flag = true;
-		String strboolean = String.valueOf(flag);
-		System.out.println(strboolean);//true
+		String strBoolean = String.valueOf(flag);
+		System.out.println(strBoolean);//true
 		
 		
 		

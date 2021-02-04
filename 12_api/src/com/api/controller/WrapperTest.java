@@ -21,9 +21,9 @@ public class WrapperTest {
 		System.out.println(Boolean.parseBoolean("true"));
 		
 		double weight = 65.5;
-		Double weightObj = weight;
-		System.out.println(weightObj);
-		weightObj = Double.parseDouble("180.5");
+		Double weightObj = weight;//autoboxing
+		System.out.println(weightObj);//65.5
+		weightObj = Double.parseDouble("180.5");////String->double: autounboxing
 		System.out.println(weightObj);
 	}
 	
